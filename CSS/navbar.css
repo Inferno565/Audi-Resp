@@ -23,15 +23,34 @@ a {
   text-decoration: none;
   color: gray;
 }
+/* .resp-menu{
+    display:block;
+    margin-top: 100px;
+} */
+.burger-content {
+  display: none;
+  transition: max-height 2s ease-in;
+  transition-duration: 2s;
+}
 
-
+.show-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(248, 245, 245);
+  position: fixed;
+  width: 100%;
+}
 
 @media (max-width: 400px) {
   #Nav {
     display: none;
   }
   .hmenu {
-    display:flex;
+    display: flex;
+    align-items: center;
   }
   .container {
     justify-content: space-around;
